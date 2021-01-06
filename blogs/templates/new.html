@@ -1,0 +1,321 @@
+{% load static %}
+<! DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+<style>
+  .text-tarn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 13px;
+  z-index: 200;
+}
+.text-tarn textarea {
+  max-width: 100%;
+  min-width: 100%;
+  border: 0;
+  background-color: #232323db;
+  color: #fff;
+  padding: 22px;
+  font-family: system-ui;
+  font-weight: bold;
+  line-height: 27px;
+  border-radius: 20px;
+  outline: none;
+}
+.pleas {
+  position: absolute;
+  right: 0;
+}
+</style>
+</head>
+<body>
+    <div class="content_all">
+        <div class="container">
+
+            <div class="row-content" style="margin-top: 50px">
+                <div class="row top-row" style="margin-bottom: 30px">
+                    <div class="col-12 col-sm-12">
+
+                              <div class="pleas" style="display: none;">
+                                <h5>يرجى الإنتظار</h5>
+                              </div>
+                              <button class="add-tran btn-ca">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="btn-play btn-ca">
+                                start
+                            </button>
+                            <button class="add-end btn-ca">
+                                end
+                            </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="content-vid-url">
+   <div class="media-wrapper">
+        <div class="video-player">
+
+        <video
+src="https://r4---sn-hgn7yn7z.googlevideo.com/videoplayback?expire=1609075655&ei=ZzfoX8qYEI_i1wKG0K_YCQ&ip=45.130.62.81&id=o-AKuxym6zTdLQiET8NA2pk7MHu2pUTLjN6EQCEOyU04Yh&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video/mp4&ns=qFOFXZ-6ZhytQg5GcNvP7IcF&gir=yes&clen=23061608&ratebypass=yes&dur=429.662&lmt=1606994346045964&fvip=4&c=WEB&txp=6210222&n=xTSD3NLq5VtjMx5N&sparams=expire,ei,ip,id,itag,source,requiressl,vprv,mime,ns,gir,clen,ratebypass,dur,lmt&sig=AOq0QJ8wRAIgd4DFkesHIDMifR34FMiQmqjse0wla6l8tGHOd3TzEF4CIEUW7X5T8juBGpVvRbVy0hYn9DmVSAr6YQUw9S86UEIy&avi=K1A%2FHwERIiwAVF9GZkhtdyQCDzEDNT5HSFQmDVNZV0E1FigaFRwsBwECFkYZahAFZRdaRFQZIwdUFR0eT1pYWzcUDQUEBCIMEQ8RFRcTHhEkBQwEFQ04DAsHBBdHV1VbOkIFDB0XOwcKG1RWEAUHBWdKUB1HKWFHJx8VDEZDZlo9FxoCBBk9R15UPjgBAAQDaUJcRVNGeTlGWjlGEgcCC2VLXERUQhFHOQpUUhMIAgZkQlxDR1hvNQgXHAVBWF5aJAs6AgQAOBZGTEcraBMeEQYbDRMKPSMDCyMXCGpfVlYoUFNGSVYUMQcZEApXQ0sRalA5IkdYbzUWGR0dAQsQWyQGGUxKW3lQSkdWVA0HAB1oQ1NOVUR9SkZaRylCSX9aPhYqGRAaORcdVF9GbnAQH3IxHAQXESMRMB8IAVBFU14gUFNUVEJ9XFRDUVQWBBAfcjcRAhcVLhELBDEdU1QQCXIYGhkLPSM1BREARl4%3D&from_cache=True&rm=sn-5hnele7z&req_id=7de82ba7cc29a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-p5h-g53l7z&cms_redirect=yes&mh=BC&mip=105.158.20.239&mm=29&mn=sn-hgn7yn7z&ms=rdu&mt=1609053875&mv=m&mvi=4&pl=21&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAP7h03MvOksEkZP50oRDDUcB8tj8UiSjuv02V5lyJW9ZAiBF1ahurx3w4Ha7E-oXAzJuGo4Xr2pw6ET4WyWY9nAvmw%3D%3D"
+        ></video>
+        <div class="video-controls">
+          <div class="video-top-controls">
+            <div class="video-seekbar seekbar">
+              <span class="progress"></span>
+            </div>
+          </div>
+
+          <div class="video-playback-controls">
+            <button class="control-btn toggle-play-pause play">
+              <i class="fas fa-play play-icon icon"></i>
+              <i class="fas fa-pause pause-icon icon"></i>
+            </button>
+            <div class="video-volume-control">
+              <button class="control-btn toggle-volume on">
+                <i class="fas fa-volume-up icon volume-on"></i>
+                <i class="fas fa-volume-mute icon volume-off"></i>
+              </button>
+              <div class="volume-seekbar seekbar">
+                <span class="progress"></span>
+              </div>
+            </div>
+            <div class="video-timings">
+              <div class="start-time time">00:00:00</div>
+              /
+              <div class="end-time time">00:00:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>                        </div>
+                        <div class="icon-vid" style="margin-top: 20px">
+                            <button class="">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="hidden-char">
+                                <i class="fas fa-angle-down"></i>
+                            </button>
+                            <button class="hidden-up">
+                                <i class="fas fa-angle-up"></i>
+                            </button>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="content-tran">    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="allaow" style="z-index: 1000;width: 200px;height: 300px; position: absolute; top: 20px; right: 50px; border: 3px solid #fff">
+    <span class="move-h se" style="position: absolute; top: 0; right: 0; width: 10px; height: 10px; background: black"></span>
+    <span class="move-h" style="position: absolute; top: 0; left: 0; width: 10px; height: 10px; background: black"></span>
+    <span class="move-h" style="position: absolute; bottom: 0; right: 0; width: 10px; height: 10px; background: black"></span>
+    <span class="move-h" style="position: absolute; bottom: 0; left:  0; width: 10px; height: 10px; background: black"></span>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{% static '/js/script.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+<script>
+
+
+
+        let el = document.querySelector('.allaow');
+
+        el.addEventListener('mousedown', mousedown);
+
+        function mousedown(e) {
+            window.addEventListener('mousemove', mousemove);
+            window.addEventListener('mouseup', mouseup);
+
+            let prevX = e.clientX;
+            let prevY = e.clientY;
+            console.log(prevX)
+            function mousemove(e) {
+                 let newX = prevX - e.clientX;
+                 let newY = prevY - e.clientY;
+
+                 const rect = el.getBoundingClientRect();
+                 el.style.left = rect.left - newX + "px";
+                 el.style.top = rect.top - newY + "px";
+
+                 prevX = e.clientX;
+                 prevY = e.clientY;
+            }
+            function mouseup() {
+
+                window.removeEventListener('mousemove', mousemove);
+                window.removeEventListener('mouseup', mouseup);
+
+            }
+        }
+
+        const resizers = document.querySelectorAll(".move-h");
+
+        for(let resizer of resizers) {
+            resizer.addEventListener('mousedown', mousedown)
+            function mousedown(e) {
+                currentResizer = e.target;
+
+                let prevX = e.clientX;
+                let prevY = e.clientY;
+
+                window.addEventListener('mousemove', mousemove);
+                window.addEventListener('mouseup', mouseup);
+
+
+                function mousemove(e) {
+
+                    const rect = el.getBoundingClientRect();
+                    if(currentResizer.classList.contains('se')) {
+                        el.style.width = rect.width - (prevX - e.clientX) + "px";
+                        el.style.height = rect.height - (prevY - e.clientY) + "px";
+                    }
+                    prevX = e.clientX;
+                    prevY = e.clientY;
+
+                }
+                function mouseup() {
+
+                          window.removeEventListener('mousemove', mousemove);
+                          window.removeEventListener('mouseup', mouseup);
+
+
+                }
+
+            }
+        }
+
+
+
+
+
+</script>
+<script>
+
+    $(document).ready(function () {
+
+
+        $('.add-tran').click(function () {
+
+            var p = $(".allaow").last();
+            var offset = p.offset();
+            let topTR = offset.top + 104;
+            let leftTR = offset.left;
+            let widthTR = document.querySelector('.allaow').clientWidth + leftTR;
+            let heightTR = document.querySelector('.allaow').clientHeight + 10 + topTR ;
+            var startval = $('.start-time').html();
+            $('.pleas').show();
+            $.ajax({
+
+                url: "{% url 'grabImageVid' %}",
+                method: 'GET',
+                data : { topTR:topTR, leftTR:leftTR, widthTR:widthTR, heightTR:heightTR },
+                success: function (response) {
+
+                    let  htmlTan = "";
+                      htmlTan += '<div class="post-teran col-12 col-sm-12" style="margin-bottom: -19px">';
+                        htmlTan += '<div class="body-tran">';
+                              htmlTan += '<div class="col-12 col-md-12" style="margin-bottom: 10px">';
+                                htmlTan += '<textarea>';
+                                    htmlTan += response.ti;
+                                htmlTan += '</textarea>';
+                              htmlTan += '</div>';
+                            htmlTan += '<div class="start-vid-ha col-5 col-sm-6" style="float: right">';
+                                htmlTan += '<input value="' + startval + '" type="text">';
+                            htmlTan += '</div>';
+                            htmlTan += '<div class="end-vid-ha col-5 col-sm-6">';
+                                htmlTan += '<input type="text">';
+                            htmlTan += '</div>';
+                            htmlTan += '<div style="clear: both"></div>';
+                        htmlTan += '</div>';
+                    htmlTan += '</div>';
+
+
+                    $(".content-tran").append(htmlTan);
+                    $('.pleas').hide();
+
+                }
+            });
+
+
+        })
+
+
+    });
+
+</script>
+<script>
+$(document).ready(function() {
+
+  $('.hidden-char').click(function () {
+
+    $('.video-controls').hide();
+
+  });
+  $('.hidden-up').click(function () {
+
+    $('.video-controls').show();
+
+  });
+  $('.btn-play').click(function () {
+      $('.toggle-play-pause').click()
+  })
+
+});
+
+
+</script>
+  <a href="#" class="llk" download="yyyyyyy.sbv">sbv</a>
+<script>
+   $('.llk').click(function() {
+                         
+   var textvalall = '';
+    for(i = 0; i < $('.content-tran > div').length; i++) {
+
+           str =  $('.post-teran .start-vid-ha input').eq(i).val();
+      
+
+           str2 = $('.post-teran .end-vid-ha input').eq(i).val();
+    
+
+           textvalall += str + ',' + str2; 
+           textvalall += "\n"
+           textvalall += $('.post-teran textarea').eq(i).html();
+           textvalall += "\n";
+           textvalall += "\n";
+
+
+    }
+
+console.log(textvalall)
+
+
+    this.href = "data:text/plain;charset=UTF-8," + textvalall;
+
+   });
+
+    $('.add-end').click(function() {
+    
+        var endval = $('.start-time').html();
+        var cap1 = $('.content-tran > div').length - 1;
+        $('.post-teran .end-vid-ha input').eq(cap1).val(endval)
+
+    });
+
+</script>
+
+</body>
+</html>
